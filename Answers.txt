@@ -1,0 +1,49 @@
+Task 1: 
+
+After going through and visualizing the data, I found that there are a number of biases found 
+within the data, for example the three biggest majors that ordered from the food truck were chemistry,
+biology, and astronomy. Namely, out of the top ten mjoars that ordered the most, seven out of ten of them
+were STEM majors. However, I found that the most glaring detail about this data was that the only grades
+that ordered from the food truck were sophomores and juniors. The three biggest universities by far that
+ordered from the truck were from Butler University, Indiana State University, and Ball State University.
+I also found it very interesting that all the menu items were equally ordered meaning there wasn't just
+one very popular menu item. Lastly, the most pouplar times to order were 12:00 and 1:00 with a normal
+bell curve for the other times. The business can use all these different insights to manage their business
+differently, for example if they wanted to change their open hours to only be open from 10:00 to 4:00 as
+the hours before and after that time interval don't have that many people ordering from the truck. They 
+could also only open at the top three or four universities multiple times a week instead of being at different
+universities that make less money.
+
+Task 2:
+
+Ethical Implications: The ethical implications of data collection come from how we are obtaining this information.
+If our data collection methods involve privacy-invading practices, it can raise some ethical concerns. For data storage,
+we have to ensure that the correct measures to protect the user's info and any unauthorized access to our data can lead
+to privacy breaches and more importantly ethical issues. Lastly, the data biases and lead to unfair and unethical treatment
+of certain people based on their location, age, major, etc. in order to maximize profits.
+
+Business Outcome Implications: If we collect our data in an ethical manner, it can not only improve reputation among
+customers, but it can also lead to more data as people tend to share more with companies/people they trust. Protecting our data
+from being breached can avoid legal actions along with avoiding potential fines and fees. Lastly, carefully choosing what biases
+to use can lead to a more optimized business model with maximixed profits. 
+
+Technical Implications: Proper data collection can be used in a machine learning model to create new insights that are more effective
+for analytics. Storing data correctly allows for data integrity and security for technical systems which can lead to a lasting repository
+for data. Finally, addressing biases in a technical scope means using preprocessing and algorithm fairness to ensure no people groups are
+being treated unfairly
+
+Task 3:
+
+When creating the model, I had a lot of trouble trying to train the model as you need to train it on numerical data, so right now my model
+can predict the order soley based on the year due to time constraints. However, given more time I would've one-hot encoded or label encoded
+the non-numerical data in order to turn it into numerical data to be scaled and later used to train the model. Using the sklearn 
+RandomForestClassifier, which has multiple different decision trees at training time, then outputs the mean prediction of those individual
+trees, I then saved that model to a pickle file and created a prediction method along with a predictor class in order to test the data. I
+created an example data frame that gives a sample user and from there I print the prediction (which is currently only based on the time).
+
+Task 4:
+
+Some considerations I would make to determine if this was a suitable course of action was what kind of data was present in the data set as 
+non-numerical data makes it harder to train the model. However, I do think that it is a good possible course of action as it provides insights
+as to what menu item is the best given different categories to which can then lead to maximizing profits. The data doesn't have any biases that
+unfairly treat any one people group and data collection and storage happen in an ethically moral way so there isn't really any downside.
